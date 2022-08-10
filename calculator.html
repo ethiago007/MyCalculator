@@ -18,22 +18,39 @@
 </head>
 
 <body class="text-center ">
+    <div class="standard">
     <form name="calculator">
         <div class="calc shadow p-3 mb-5 bg-body rounded">
-            <div class="row row1">
+            <ul class="nav justify-content-center ">
+                <li class="nav-item active">
+                  <b> <a class="nav-link " aria-current="page" href="">Standard Calculator</a></b>
+                </li>
+                <li class="nav-item">
+                  <b> <a class="nav-link" href="">Scientific Calculator</a></b>
+                </li>
+                <li class="nav-item">
+                  <b> <a class="nav-link" href="">Exchange Rate</a></b>
+                </li>
+                <li class="nav-item">
+                    <b> <a class="nav-link" href="">Unit Converter</a></b>
+                  </li>
+        
+              </ul>
+            <!-- <div class="row row1">
                 <div class="col-md-4 col-sm-4">Calculator</div>
                 <div class="col-md-4 col-sm-4">Unit Converter</div>
                 <div class="col-md-4 col-sm-4">Exchange Rate</div>
-            </div>
+            </div> -->
             <br>
-            <div class="output "> <input class="input" type="text" name="display" id="display" disabled> </div>
+            <div class="output "> <input class="input" type="text" name="display" id="display" size="30" disabled> 
+            <br> <input class="input" type="text" name="display2" id="display2"  disabled> </div>
             <br>
             <div class="row">
                 <div class="col-md-3 col-sm-3"><input type="button" id="clear" name="clear" value="C"
                         onclick="calculator.display.value = ''"></div>
                 <div class="col-md-3 col-sm-3"><input type="button" name="one" value="%"
                         onclick="calculator.display.value += '/100'"></div>
-                <div class="col-md-3 col-sm-3"><button class="back"><i class="fa-solid fa-delete-left"></i></button></div>
+                <div class="col-md-3 col-sm-3"><button class="back" onclick="back()"><i class="fa-solid fa-delete-left"></i></button></div>
                 <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="div" value="/"
                         onclick="calculator.display.value += '/'"></div>
             </div>
@@ -78,13 +95,14 @@
                 <div class="col-md-3 col-sm-3"><input type="button" name="point" value="."
                         onclick="calculator.display.value += '.'"></div>
                 <div class="col-md-3 col-sm-3"><input type="button" name="doit" value="="
-                        onclick="calculator.display.value = eval(calculator.display.value)"></div>
+                        onclick="calculator.display2.value = eval(calculator.display.value)"></div>
             </div>
 
          
 
         </div>
     </form>
+</div>
        <!-- <div class="row ">
             <div class="col-md-3 col-sm-3 button"><b id="clear" name="clear" value="c" onclick="calculator.display.value = ''"> C </b></div>
             <div class="col-md-3 col-sm-3 button"><b> %</b></div>
