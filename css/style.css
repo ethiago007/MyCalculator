@@ -30,14 +30,69 @@ div {
 }
 
  .input {
-    background-color: darkgrey;
+  background-color: black;
    width: 800px;
     border-radius: 25px;
-   
+   border: black;
     font-size: 26px;
     text-align: right;
+    font-weight: bolder;
+    color: white;
+  } 
+
+  .input1 {
+    background-color: black;
+   width: 800px;
+    border-radius: 25px;
+   border: black;
+    font-size: 26px;
+    font-weight: lighter;
+    color: purple;
    
-} 
+  } 
+
+.row1 {
+  color: purple;
+  
+}
+
+.let {
+  font-size: large;
+}
+
+/* .let::before {
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+.let:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.let:hover{
+  color: black;
+} */
+
+
+.science2 {
+  border-radius: 25px;
+}
+
+.output {
+  background-color: black;
+  border-radius: 25px ;
+}
+
+
+.table {
+    width: 350px;
+    border: 5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
 
 input{
     border-radius: 15px;
@@ -76,16 +131,14 @@ input{
     color: black
     /* text-decoration: none; */
   }
-  .a{
-    color: chocolate;
-  }
-  
+    
   .nav-link:hover{
-    color: chocolate;
+    color: black;
    
   }
   .nav-link {
-    position: relative;
+    
+    color: black;
   }
   
   .nav-link::before {
@@ -94,7 +147,7 @@ input{
       width: 100%;
       height: 4px;
       border-radius: 4px;
-      background-color: chocolate;
+      background-color: black;
       bottom: 0;
       left: 0;
       transform-origin: right;

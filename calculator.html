@@ -19,124 +19,97 @@
 
 <body class="text-center ">
     <div class="standard">
-    <form name="calculator">
-        <div class="calc shadow p-3 mb-5 bg-body rounded">
-            <ul class="nav justify-content-center ">
-                <li class="nav-item active">
-                  <b> <a class="nav-link " aria-current="page" href="">Standard Calculator</a></b>
-                </li>
-                <li class="nav-item">
-                  <b> <a class="nav-link" href="">Scientific Calculator</a></b>
-                </li>
-                <li class="nav-item">
-                  <b> <a class="nav-link" href="">Exchange Rate</a></b>
-                </li>
-                <li class="nav-item">
-                    <b> <a class="nav-link" href="">Unit Converter</a></b>
-                  </li>
-        
-              </ul>
-            <!-- <div class="row row1">
+        <form name="calculator">
+            <div class="calc shadow p-3 mb-5 bg-body rounded">
+                <ul class="nav justify-content-center ">
+                    <li class="nav-item active">
+                        <b> <a class="nav-link " aria-current="page" href="">Standard Calculator</a></b>
+                    </li>
+                    <li class="nav-item">
+                        <b> <a class="nav-link" href="science.html">Scientific Calculator</a></b>
+                    </li>
+                    <li class="nav-item">
+                        <b> <a class="nav-link" href="">Exchange Rate</a></b>
+                    </li>
+                    <li class="nav-item">
+                        <b> <a class="nav-link" href="">Unit Converter</a></b>
+                    </li>
+
+                </ul>
+                <!-- <div class="row row1">
                 <div class="col-md-4 col-sm-4">Calculator</div>
                 <div class="col-md-4 col-sm-4">Unit Converter</div>
                 <div class="col-md-4 col-sm-4">Exchange Rate</div>
             </div> -->
-            <br>
-            <div class="output "> <input class="input" type="text" name="display" id="display" size="30" disabled> 
-            <br> <input class="input" type="text" name="display2" id="display2"  disabled> </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3 col-sm-3"><input type="button" id="clear" name="clear" value="C"
-                        onclick="calculator.display.value = ''"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="one" value="%"
-                        onclick="calculator.display.value += '/100'"></div>
-                <div class="col-md-3 col-sm-3"><button class="back" onclick="back()"><i class="fa-solid fa-delete-left"></i></button></div>
-                <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="div" value="/"
-                        onclick="calculator.display.value += '/'"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3 col-sm-3"><input type="button" name="seven" value="7"
-                        onclick="calculator.display.value += '7'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="eight" value="8"
-                        onclick="calculator.display.value += '8'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="nine" value="9"
-                        onclick="calculator.display.value += '9'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3 col-sm-3"><input type="button" name="four" value="4"
-                        onclick="calculator.display.value += '4'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="five" value="5"
-                        onclick="calculator.display.value += '5'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="six" value="6"
-                        onclick="calculator.display.value += '6'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="minus" value="-"
-                        onclick="calculator.display.value += '-'"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3 col-sm-3"><input type="button" name="one" value="1"
-                        onclick="calculator.display.value += '1'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="two" value="2"
-                        onclick="calculator.display.value += '2'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="three" value="3"
-                        onclick="calculator.display.value += '3'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="plus" value="+"
-                        onclick="calculator.display.value += '+'"></div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3 col-sm-3"><input type="button" name="zerozero" value="00"
-                        onclick="calculator.display.value += '00'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="zero" value="0"
-                        onclick="calculator.display.value += '0'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="point" value="."
-                        onclick="calculator.display.value += '.'"></div>
-                <div class="col-md-3 col-sm-3"><input type="button" name="doit" value="="
-                        onclick="calculator.display2.value = eval(calculator.display.value)"></div>
-            </div>
+                <br>
+                <div class="output "> <input type="text" class="form-control input1" name="display" id="display" disabled>
+                    <br> <input class="form-control input"  name="display2" id="display2" disabled>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3"><input type="button" id="clear" name="clear" value="C"
+                            onclick="calculator.display.value = ''"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" name="one" value="%"
+                            onclick="calculator.display.value += '/100'"></div>
+                    <div class="col-md-3 col-sm-3"><button class="back" onclick="back()"><i
+                                class="fa-solid fa-delete-left"></i></button></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="div" value="/"
+                            onclick="calculator.display.value += '/'"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="seven" value="7"
+                            onclick="calculator.display.value += '7'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="eight" value="8"
+                            onclick="calculator.display.value += '8'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="nine" value="9"
+                            onclick="calculator.display.value += '9'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="times" value="x"
+                            onclick="calculator.display.value += '*'"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="four" value="4"
+                            onclick="calculator.display.value += '4'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="five" value="5"
+                            onclick="calculator.display.value += '5'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="six" value="6"
+                            onclick="calculator.display.value += '6'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="minus" value="-"
+                            onclick="calculator.display.value += '-'"></div>
 
-         
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="one" value="1"
+                            onclick="calculator.display.value += '1'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="two" value="2"
+                            onclick="calculator.display.value += '2'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="three" value="3"
+                            onclick="calculator.display.value += '3'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" class="operator" name="plus" value="+"
+                            onclick="calculator.display.value += '+'"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="zerozero" value="00"
+                            onclick="calculator.display.value += '00'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" id="calcn" name="zero" value="0"
+                            onclick="calculator.display.value += '0'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" name="point" value="."
+                            onclick="calculator.display.value += '.'"></div>
+                    <div class="col-md-3 col-sm-3"><input type="button" name="doit" value="="
+                            onclick="calculator.display2.value = eval(calculator.display.value)"></div>
+                </div>
 
-        </div>
-    </form>
-</div>
-       <!-- <div class="row ">
-            <div class="col-md-3 col-sm-3 button"><b id="clear" name="clear" value="c" onclick="calculator.display.value = ''"> C </b></div>
-            <div class="col-md-3 col-sm-3 button"><b> %</b></div>
-            <div class="col-md-3 col-sm-3 button"><b> <i class="fa-solid fa-delete-left"></i></b></div>
-            <div class="col-md-3 col-sm-3 button"><b   class="operator" name="div" value="/" onclick="calculator.display.value += '/'"> <i class="fa-solid fa-divide" ></i></b></div>
-        </div>
-        <br>
-        <div class="row ">
-            <div class="col-md-3 col-sm-3 button " ><b class="rounded-circle" name="seven" value="7" onclick="calculator.display.value += '7'" > 7</b></div>
-            <div class="col-md-3 col-sm-3 button"><b name="eight" value="8" onclick="calculator.display.value += '8'"> 8</b></div>
-            <div class="col-md-3 col-sm-3 button"><b name="nine" value="9" onclick="calculator.display.value += '9'"> 9</b></div>
-            <div class="col-md-3 col-sm-3 button"><b class="operator" name="times" value="x" onclick="calculator.display.value += 'X'"> X</b></div>
-        </div>
-        <br>
-        <div class="row ">
-            <div class="col-md-3 col-sm-3 button"><b  name="four" value="4" onclick="calculator.display.value += '4'"> 4</b></div>
-            <div class="col-md-3 col-sm-3 button"><b name="five" value="5" onclick="calculator.display.value += '5'"> 5</b></div>
-            <div class="col-md-3 col-sm-3 button"><b  name="six" value="6" onclick="calculator.display.value += '6'"> 6</b></div>
-            <div class="col-md-3 col-sm-3 button"><b class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"> <i class="fa-solid fa-minus"></i></b></div>
-        </div>
-        <br>
-        <div class="row ">
-            <div class="col-md-3 col-sm-3 button"><b name="one" value="1" onclick="calculator.display.value += '1'"> 1</b></div>
-            <div class="col-md-3 col-sm-3 button"><b name="two" value="2" onclick="calculator.display.value += '2'"> 2</b></div>
-            <div class="col-md-3 col-sm-3 button"><b  name="three" value="3" onclick="calculator.display.value += '3'"> 3</b></div>
-            <div class="col-md-3 col-sm-3 button"><b class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"> <i class="fa-solid fa-plus"></i></b></div>
-        </div>
-        <br>
-        <div class="row ">
-            <div class="col-md-3 col-sm-3 button not"><b name="zerozero" value="00" onclick="calculator.display.value += '00'"> 00</b></div>
-            <div class="col-md-3 col-sm-3 button"><b name="zero" value="0" onclick="calculator.display.value += '0'"> 0</b></div>
-            <div class="col-md-3 col-sm-3 button"><b name="point" value="." onclick="calculator.display.value += '.'"></b> .</b></div>
-            <div class="col-md-3 col-sm-3 button"><b name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"> <i class="fa-solid fa-equals"></i></b></div>
-        </div> -->
+
+
+            </div>
+        </form>
+    </div>
+
+
 
 </body>
 
