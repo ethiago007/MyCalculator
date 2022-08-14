@@ -1,55 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-    
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery-3.6.0.js"></script>
-        <script src="js/arithmetic.js"></script>
-        <script src="js/science.js"></script>
-        <script src="js/UI.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-        <title>Calculator</title>
-    </head>
-<body class="text-center ">
-    <!-- <ul class="nav justify-content-center ">
-        <li class="nav-item active">
-            <b> <a class="nav-link " aria-current="page" href="calculator.html">Standard Calculator</a></b>
-        </li>
-        <li class="nav-item">
-            <b> <a class="nav-link" href="">Scientific Calculator</a></b>
-        </li>
-        <li class="nav-item">
-            <b> <a class="nav-link" href="">Exchange Rate</a></b>
-        </li>
-        <li class="nav-item">
-            <b> <a class="nav-link" href="">Unit Converter</a></b>
-        </li>
 
-    </ul> -->
-    <form action="" name="science" class="science2 text-center">
-        <div class="output  "> <input type="text" class=" input1" name="display" id="display" disabled>
-            <br><br><br><br><br><br> <input class=" input"  name="display2" id="display2" disabled>
-            
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/arithmetic.js"></script>
+    <script src="js/science.js"></script>
+    <script src="js/UI.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>science</title>
+</head>
+
+<body class="text-center " >
+    <form action="" name="science"  class="science2 text-center shadow-lg p-3 mb-5  rounded calcnm">
+        <div class="row rowd">
+            <div class="col-md-6 col-sm-6 left"> <span><b><strong> Hi there, user <i
+                                class="fa-regular fa-face-smile-beam"></i> </strong></b></span></div>
+            <div class="col-md-6 col-sm-6 right"> <button type="button" class="btn btn-dark dark-mode"><b> DARK MODE </b>  <i
+                        class="fa-regular fa-moon"></i></button> <button type="button" class="btn btn-light light-mode"><b> LIGHT MODE </b>  <i class="fa-regular fa-circle"></i></button> </div>
         </div>
         <br>
+        <div class="output call "> <input type="text" class="input1 noir1" name="display" id="display" disabled>
+            <br><br><br><br> <input type="text" class="input noir" name="display2" id="display2" disabled>
+
+        </div>
+
+        <br>
         <div class="row row1">
-            <div class="col-md-3 col-sm-3 let">NORMAL</div>
-            <div class="col-md-3 col-sm-3 let"><b>SCIENTIFIC</b></div>
+            <div class="col-md-3 col-sm-3 let1 normcalc">NORMAL</div>
+            <div class="col-md-3 col-sm-3 let scicalc">SCIENTIFIC</div>
+            <div class="col-md-3 col-sm-3 let">UNIT CONVERTER</div>
+            <div class="col-md-3 col-sm-3 let">EXCHANGE RATE</div>
+        </div>
+        
+        <hr>
+        
+        <br style="background-color: black;">
+       
+        <div class="scientific-func"> <table>
+            <tr>
+                <td > <button type="button" id="rad" style="border: solid red" class="inputbtn inputbt" onclick="calc_rad()">rad</button></td></td>
+                    <td > <input type="button" class="inputc input13" value="ABS" onclick="science.display.value+='Math.abs('"></td>
+                    <td > <input type="button" class=" bracket inputc input13" value="(" onclick="science.display.value += '('"></td>
+                    <td > <input type="button" class=" bracket inputc input13" value=")" onclick="science.display.value += ')'"></td>
+                    <td > <input type="button" class="inputc input13" value="RND" onclick="science.display.value+='Math.random('" ></td>
+                    <td > <button type="button" id="deg" class="inputbtn inputbt" onclick="calc_deg()">deg</button></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr> 
+                
+            <td > <button type="button" class="inputbtn inputbt" onclick=" square(this.form)"><b> x<sup>2</sup> </b></button></td>
+            <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value+= 'sqrt('"><b> &#8730 </b></button></td>
+            <td > <input type="button" value="x!" class="inputc input13" onclick="science.display.value+= 'factorial('"></td>
+            <td > <button type="button" class="inputbtn inputbt" onclick="cube(this.form)"><h4> x<sup>3</sup></h4></button></td>
+            <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value= 'cbrt('"><b><h4> &#8731</4></b></button></td>
+           
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td > <input type="button" class="inputc input13" id="" value="sin(" onclick="science.display.value+='sin('"></td>
+                <td > <input type="button" class="inputc input13" id="" value="cos(" onclick="science.display.value+='cos('"></td>
+                <td > <input type="button" class="inputc input13" id="" value="tan(" onclick="science.display.value+='tan('"></td>
+                <td > <input type="button" class="inputc input13" value="log10(x)" onclick="science.display.value+='Math.log10('"></td>
+                <td > <button type="button" class="inputbtn inputbt" name="exponent" onclick="science.display.value+= 'Math.log('"><b>In </b></button></td>
+                
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value+='asin('">sin<sup>-1</sup></button></td>
+                <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value+='acos('">cos<sup>-1</sup></button></td>
+                <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value+='atan('">tan<sup>-1</sup></button></td>
+                <td > <input  type="button" class="inputc input13" value="π" onclick="science.display.value+='3.141592653589793'"></td>
+                <td > <input type="button" class="inputc input13" value="exp" onclick="science.display.value+='exp('"></td>
+            </tr>
+        </table> <br></div>
+
+
+        
+            <table>
+                <tr>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="seven" value="7"
+                            onclick="science.display.value += '7'"></td>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="eight" value="8"
+                            onclick="science.display.value += '8'"></td>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="nine" value="9"
+                            onclick="science.display.value += '9'"></td>
+                    <td> <input type="button" class="inputc input13" value="DEL" name="del" onclick="back()"> </td>
+                    <td> <input type="button" class="inputc input13" id="clear" name="clear" value="C"
+                            onclick="science.display.value = ''"></td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="four" value="4"
+                            onclick="science.display.value += '4'"></td>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="five" value="5"
+                            onclick="science.display.value += '5'"></td>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="six" value="6"
+                            onclick="science.display.value += '6'"></td>
+                    <td> <b><input type="button" class="operator inputc input13" name="multiply" value="x"
+                                onclick="science.display.value += '*'"></b></td>
+                    <td> <input type="button" class="operator inputc input13" name="div" value="/"
+                            onclick="science.display.value += '/'"></td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="one" value="1"
+                            onclick="science.display.value += '1'"></td>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="two" value="2"
+                            onclick="science.display.value += '2'"></td>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="three" value="3"
+                            onclick="science.display.value += '3'"></td>
+                    <td><b> <input type="button" class="operator inputc input13" name="add" value="+"
+                                onclick="science.display.value += '+'"></b></td>
+                    <td> <b><input type="button" class="operator inputc input13" name="minus" value="-"
+                                onclick="science.display.value += '-'"></b></td>
+                </tr>
+            </table>
+            <br>
+            <table class="table2">
+                <tr>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="zerozero" value="00"
+                            onclick="science.display.value += '00'"></td>
+                    <td> <input type="button" class="inputc input13" id="calcn" name="zero" value="0"
+                            onclick="science.display.value += '0'"></td>
+                    <td> <input type="button" class="inputc input13" name="point" value="."
+                            onclick="science.display.value += '.'"></td>
+                    <td> <input class="inputc input13" type="button" value="%" onclick="calculator.display.value += '/100'">
+                    </td>
+                    <td> <button type="button" class="equal " name="doit" value="="
+                            onclick="science.display2.value = eval(science.display.value)"><i
+                                class="fa-solid fa-equals"></i></button></td>
+                </tr>
+            </table>
+
+
+    </form>
+
+
+
+
+
+
+    <!-- SCIENTIFIC CALCULATOR
+    <form action="" name="science" class="science2 text-center shadow-lg p-3 mb-5 bg-body rounded calsc">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 left">  <span><b><strong> Hi there, user <i class="fa-regular fa-face-smile-beam"></i> </strong></b></span></div>
+            <div class="col-md-6 col-sm-6 right">  <button type="button" class="btn btn-dark"><b> DARK MODE </b> <i class="fa-regular fa-moon"></i></button> </div>
+          </div> <br>
+        <div class="output  "> <input type="text" class="input1" name="display" id="display" disabled>
+            <br><br><br><br> <input type="text" class="input"  name="display2" id="display2" disabled>
+            
+        </div>
+        
+        <br>
+        <div class="row row1">
+            <div class="col-md-3 col-sm-3 let normcalc">NORMAL</div>
+            <div class="col-md-3 col-sm-3 let1"><b>SCIENTIFIC</b></div>
             <div class="col-md-3 col-sm-3 let">UNIT CONVERTER</div>
             <div class="col-md-3 col-sm-3 let">EXCHANGE RATE</div>
         </div>
         <hr>
         <br>
+        <div class="dark buttons">
         <table>
             <tr>
-                <td><input type="button" value="RAD"></td>
+                <td > <button type="button" id="rad" style="border: solid red" class="inputbtn inputbt" onclick="calc_rad()">rad</button></td></td>
+                    <td > <input type="button" class="inputc input13" value="ABS" onclick="science.display.value+='Math.abs('"></td>
+                    <td > <input type="button" class=" bracket inputc input13" value="(" onclick="science.display.value += '('"></td>
+                    <td > <input type="button" class=" bracket inputc input13" value=")" onclick="science.display.value += ')'"></td>
+                    <td > <input type="button" class="inputc input13" value="RND" onclick="science.display.value+='Math.random('" ></td>
+                    <td > <button type="button" id="deg" class="inputbtn inputbt" onclick="calc_deg()">deg</button></td>
             </tr>
         </table>
-    </form>
+        <br>
+        <table>
+            <tr> 
+                
+            <td > <button type="button" class="inputbtn inputbt" onclick=" square(this.form)"><b> x<sup>2</sup> </b></button></td>
+            <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value+= 'sqrt('"><b> &#8730 </b></button></td>
+            <td > <input type="button" value="x!" class="inputc input13" onclick="science.display.value+= 'factorial('"></td>
+            <td > <button type="button" class="inputbtn inputbt" onclick="cube(this.form)"><h4> x<sup>3</sup></h4></button></td>
+            <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value= 'cbrt('"><b><h4> &#8731</4></b></button></td>
+           
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td > <input type="button" class="inputc input13" id="" value="sin(" onclick="science.display.value+='sin('"></td>
+                <td > <input type="button" class="inputc input13" id="" value="cos(" onclick="science.display.value+='cos('"></td>
+                <td > <input type="button" class="inputc input13" id="" value="tan(" onclick="science.display.value+='tan('"></td>
+                <td > <input type="button" class="inputc input13" value="log10(x)" onclick="science.display.value+='Math.log10('"></td>
+                <td > <button type="button" class="inputbtn inputbt" name="exponent" onclick="science.display.value+= 'Math.log('"><b>In </b></button></td>
+                
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value+='asin('">sin<sup>-1</sup></button></td>
+                <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value+='acos('">cos<sup>-1</sup></button></td>
+                <td > <button type="button" class="inputbtn inputbt" onclick="science.display.value+='atan('">tan<sup>-1</sup></button></td>
+                <td > <input  type="button" class="inputc input13" value="π" onclick="science.display.value+='3.141592653589793'"></td>
+                <td > <input type="button" class="inputc input13" value="exp" onclick="science.display.value+='exp('"></td>
+            </tr>
+        </table>
+        <br>
+      
+      
+       <table>
+        <tr>
+            <td > <input type="button" class="inputc input13" id="calcn" name="seven" value="7"
+                onclick="science.display.value += '7'"></td>
+            <td > <input type="button" class="inputc input13" id="calcn" name="eight" value="8"
+                onclick="science.display.value += '8'"></td>
+            <td > <input type="button" class="inputc input13" id="calcn" name="nine" value="9"
+                onclick="science.display.value += '9'"></td>
+            <td > <input type="button" class="inputc input13" value="DEL" name="del" onclick="back()"> </td>
+            <td > <input type="button" class="inputc input13" id="clear" name="clear" value="C"
+                onclick="science.display.value = ''"></td>
+        </tr>
+       </table>
+       <br>
+       <table>
+        <tr>
+            <td > <input type="button" class="inputc input13" id="calcn" name="four" value="4"
+                onclick="science.display.value += '4'"></td>
+            <td > <input type="button" class="inputc input13" id="calcn" name="five" value="5"
+                onclick="science.display.value += '5'"></td>
+            <td > <input type="button" class="inputc input13" id="calcn" name="six" value="6"
+                onclick="science.display.value += '6'"></td>
+                <td > <b><input type="button"  class="operator inputc input13" name="multiply" value="x"
+                    onclick="science.display.value += '*'"></b></td>
+            <td > <input type="button" class="operator inputc input13" name="div" value="/"
+                onclick="science.display.value += '/'"></td>
+        </tr>
+       </table>
+       <br>
+       <table>
+        <tr>
+            <td > <input type="button" class="inputc input13" id="calcn" name="one" value="1"
+                onclick="science.display.value += '1'"></td>
+            <td > <input type="button" class="inputc input13" id="calcn" name="two" value="2"
+                onclick="science.display.value += '2'"></td>
+            <td > <input type="button" class="inputc input13" id="calcn" name="three" value="3"
+                onclick="science.display.value += '3'"></td>
+                <td ><b> <input type="button" class="operator inputc input13" name="add" value="+"
+                    onclick="science.display.value += '+'"></b></td>
+            <td > <b><input type="button" class="operator inputc input13" name="minus" value="-"
+                onclick="science.display.value += '-'"></b></td>
+        </tr>
+       </table>
+       <br>
+       <table class="table2">
+        <tr>
+            <td > <input type="button" class="inputc input13" id="calcn" name="zerozero" value="00"
+                onclick="science.display.value += '00'"></td>
+            <td > <input type="button" class="inputc input13" id="calcn" name="zero" value="0"
+                onclick="science.display.value += '0'"></td>
+            <td > <input type="button" class="inputc input13" name="point" value="."
+                onclick="science.display.value += '.'"></td>
+            <td > <input class="inputc input13" type="button" value="%"
+                onclick="calculator.display.value += '/100'"></td>
+            <td >  <button type="button" class="equal " name="doit" value="="
+                onclick="science.display2.value = eval(science.display.value)"><i class="fa-solid fa-equals"></i></button></td>
+        </tr>
+       </table>
+    </div>
+
+    </form> -->
 </body>
-</html> 
+
+</html>
