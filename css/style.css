@@ -194,7 +194,24 @@ display: none;
   transform: translateY(-7px);
 }
 
+.converter {
+  display: none;
+}
+.conversion {
+  width: 900px;
+}
 
+/* .conversion2 {
+  width: 1200px;
+} */
+
+.card {
+  height: 400px;
+}
+
+/* .conversion {
+  width: 800px;
+} */
 
 /* ----------------------------------------------- */
 
@@ -211,7 +228,7 @@ display: none;
   border-radius: 25px ;
 }
 .rowdark{
-  
+  background-color: #000;
   color: white;
 }
 .inputbtd {
