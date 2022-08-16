@@ -103,6 +103,24 @@ $(document).ready(function () {
 
     })
 
+    // TEMP BUTTON 
+    $(".tempbtn").click(function () {
+        $("section.temp").show();
+        $(".scientific-func").hide();
+        $(".NORMAL").hide();
+        $(".converter").hide();
+
+    })
+
+    //VOLUME BUTTON
+    $(".volumebtn").click(function () {
+        $("section.volume").show();
+        $(".scientific-func").hide();
+        $(".NORMAL").hide();
+        $(".converter").hide();
+
+    })
+
     // BACK BUTTON
     $(".backmass").click(function () {
         $(".converter").show();
@@ -110,6 +128,8 @@ $(document).ready(function () {
         $("section.length").hide();
         $("section.speed").hide();
         $("section.time").hide();
+        $("section.temp").hide();
+        $("section.volume").hide();
     })
 
 

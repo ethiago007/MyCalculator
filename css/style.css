@@ -262,7 +262,21 @@ tr {
   margin-left: -120px;
 }
 
+.temp {
+  display: none;
+  margin-top: 200px;
+  border-radius: 25px;
+  margin-left: -120px;
+}
+
 .speed {
+  display: none;
+  margin-top: 200px;
+  border-radius: 25px;
+  margin-left: -120px;
+}
+
+.volume {
   display: none;
   margin-top: 200px;
   border-radius: 25px;
@@ -275,6 +289,16 @@ tr {
 }
 
 .time-form {
+  margin-right: 100px;
+  height: 200px;
+}
+
+.temp-form {
+  margin-right: 100px;
+  height: 200px;
+}
+
+.volume-form {
   margin-right: 100px;
   height: 200px;
 }
@@ -362,6 +386,25 @@ tr {
   display: none;
 }
 
+.cel-cel {
+  display: none;
+}
+
+.kel-kel {
+  display: none;
+}
+
+.fah-fah {
+  display: none;
+}
+
+.liter1 {
+  display: none;
+}
+
+.cubic1 {
+  display: none;
+}
 
 
 /* .conversion {

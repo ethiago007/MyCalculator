@@ -14,6 +14,7 @@
     <script src="js/science.js"></script>
     <script src="js/UI.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>science</title>
 </head>
 
@@ -262,8 +263,8 @@
                         <img src="img/download.png" class="card-img-top" style="height: 200px;" alt="...">
                         <div class="card-body">
                             <h4 class="card-title">Temp</h4>
-                            <h5 class="card-text">Convert between celcius,fahrenheit and kelvin.</h5>
-                            <button type="button" class="btn btn-primary">Convert</button>
+                            <h5 class="card-text">Convert between celsius,fahrenheit and kelvin.</h5>
+                            <button type="button" class="btn btn-primary tempbtn">Convert</button>
                         </div>
                     </div>
 
@@ -274,7 +275,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Volume</h4>
                             <h5 class="card-text">Convert between liter and cubic meter.</h5>
-                            <button type="button" class="btn btn-primary">Convert</button>
+                            <button type="button" class="btn btn-primary volumebtn">Convert</button>
                         </div>
                     </div>
 
@@ -542,6 +543,128 @@
                         <option value="months">Months</option>
                         <option value="years">Years</option>
                     </select>
+                </td>
+            </tr>
+        </table>
+
+
+    </section>
+
+    <!-- TEMPERATURE CONVERSION UNIT -->
+    <section class="temp text-center shadow-lg p-3 mb-5  rounded">
+        <div class="row rowd roww">
+            <div class="col-md-6 col-sm-6 left"> <button type="button" class="btn btn-dark backmass "><b> BACK
+                    </b></button>
+            </div>
+
+
+        </div>
+        <br><br>
+        <div class="ifempty">
+            <h1> CHOOSE A UNIT </h1>
+        </div>
+        <div class="sameunit">
+            <h1> YOU CAN NOT CHOOSE THE SAME UNIT </h1>
+        </div>
+        <table class="temp-form">
+            <tr>
+                <td>
+                    <input type="number" class="num1" name="numbermass" id="numbermass"
+                        oninput="tempConverter(this.value)" onchange="tempConverter(this.value)">
+                </td>
+                <td>
+                    <select class="form-select selectlenght1" id="inputGroupSelect03t">
+                        <option value="empty" selected>Choose Unit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        
+
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <h5><b>
+                            <span id="num6"></span> <span class="cel-cel">
+                                <h5><b><i class="ri-celsius-fill"></i></b></h5>
+                            </span>
+                            <span class="kel-kel">
+                                <h5><b>K
+                                    </b></h5>
+                            </span>
+                            <span class="fah-fah">
+                                <h5><b><i class="ri-fahrenheit-fill"></i>
+                                    </b></h5>
+                            </span>
+                            
+
+                </td>
+                <td>
+                    <select class="form-select selectlenght1" id="inputGroupSelect033t">
+                        <option value="empty" selected>Choose Unit</option>
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        
+
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+    </section>
+
+    <!-- VOLUME CONVERSION UNIT -->
+
+    <section class="volume text-center shadow-lg p-3 mb-5  rounded">
+        <div class="row rowd roww">
+            <div class="col-md-6 col-sm-6 left"> <button type="button" class="btn btn-dark backmass "><b> BACK
+                    </b></button>
+            </div>
+
+
+        </div>
+        <br><br>
+        <div class="ifempty">
+            <h1> CHOOSE A UNIT </h1>
+        </div>
+        <div class="sameunit">
+            <h1> YOU CAN NOT CHOOSE THE SAME UNIT </h1>
+        </div>
+        <table class="volume-form">
+            <tr>
+                <td>
+                    <input type="number" class="num1" name="numbermass" id="numbermass"
+                        oninput="volumeConverter(this.value)" onchange="volumeConverter(this.value)">
+                </td>
+                <td>
+                    <select class="form-select selectmass" id="inputGroupSelect01v">
+                        <option value="empty" selected>Choose Unit</option>
+                        <option value="liter">Liter</option>
+                        <option value="cubic">Cubic</option>
+
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <h5><b>
+                            <div id="num7"></div>
+                        </b></h5>
+                </td>
+                <td>
+                    <span class="liter1">
+                        <h5><b>L</b></h5>
+                    </span>
+                    <span class="cubic1">
+                        <h5><b>m<sup>3</sup>
+                    </span></b></h5>
                 </td>
             </tr>
         </table>

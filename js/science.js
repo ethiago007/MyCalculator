@@ -158,15 +158,22 @@ function massConverter(valNum) {
     }
 
     else if (selection === "Gram") {
-        $(".gram-gram").hide()
-        $(".kilo-gram").show()
+        $(".gram-gram").hide();
+        $(".kilo-gram").show();
         $(".ifempty").hide();
+        $(".sameunit").hide();
         document.getElementById("num2").innerHTML = valNum / 1000;
-    } else {
+    }  else if (selection === "Kilogram") {
         document.getElementById("num2").innerHTML = valNum * 1000;
         $(".kilo-gram").hide();
         $(".gram-gram").show();
         $(".ifempty").hide();
+        $(".sameunit").hide();
+    } else {
+        $(".kilo-gram").hide();
+        $(".gram-gram").hide();
+        $(".ifempty").hide();
+        $(".sameunit").show();
     }
 }
 
@@ -292,15 +299,22 @@ function speedConverter(valNum) {
     }
 
     else if (selection === "kph") {
-        $(".kph1").hide()
-        $(".mps1").show()
+        $(".kph1").hide();
+        $(".mps1").show();
         $(".ifempty").hide();
+        $(".sameunit").hide();
         document.getElementById("num4").innerHTML = (valNum / 3.6).toFixed(5);
-    } else {
+    } else if (selection === "mps") {
         document.getElementById("num4").innerHTML = (valNum *3.6).toFixed(2);
         $(".kph1").hide();
         $(".mps1").show();
         $(".ifempty").hide();
+        $(".sameunit").hide();
+    } else {
+        $(".kph1").hide();
+        $(".mps1").hide();
+        $(".ifempty").hide();
+        $(".sameunit").show();   
     }
 }
 
@@ -789,4 +803,102 @@ function timeConverter(valNum) {
        $(".yr-yr").hide()
        
     }
+}
+
+function add(num1, num2) {
+    const result = num1 + num2
+    return result;
+}
+
+
+function tempConverter(valNum) {
+    let selection1 = $("select#inputGroupSelect03t").val()
+    let selection2 = $("select#inputGroupSelect033t").val()
+    if (selection1 === "empty" && selection2 === "empty") {
+        $(".ifempty").show();
+    }
+
+    else if (selection1 === "celsius" && selection2 === "fahrenheit") {
+        $(".kel-kel").hide()
+        $(".cel-cel").hide()
+        $(".fah-fah").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num6").innerHTML = (valNum * 9/5) + 32;
+    } else if (selection1 === "celsius" && selection2 === "kelvin") {
+        $(".kel-kel").show()
+        $(".cel-cel").hide()
+        $(".fah-fah").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        // let kelvin = 273.15
+        document.getElementById("num6").innerHTML = (valNum * 1/1) + 273.15;
+    }
+    else if (selection1 === "fahrenheit" && selection2 === "celsius") {
+        $(".kel-kel").hide()
+        $(".cel-cel").show()
+        $(".fah-fah").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num6").innerHTML = (valNum - 32) * 5/9;
+    }
+    else if (selection1 === "fahrenheit" && selection2 === "kelvin") {
+        $(".kel-kel").show()
+        $(".cel-cel").hide()
+        $(".fah-fah").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num6").innerHTML = (valNum - 32) * 5/9;
+    }  else if (selection1 === "kelvin" && selection2 === "celsius") {
+        $(".kel-kel").hide()
+        $(".cel-cel").show()
+        $(".fah-fah").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num6").innerHTML = valNum - 273.15;
+    } else if (selection1 === "kelvin" && selection2 === "fahrenheit") {
+        $(".kel-kel").hide()
+        $(".cel-cel").hide()
+        $(".fah-fah").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num6").innerHTML = (valNum - 273.15) * 9/5 + 32;
+    }
+    else {
+        $(".kel-kel").hide()
+        $(".cel-cel").hide()
+        $(".fah-fah").hide()
+        $(".sameunit").show();
+        $(".ifempty").hide();
+        
+     }
+ }
+
+ function volumeConverter(valNum) {
+    let selection = $("select#inputGroupSelect01v").val()
+    if (selection === "empty") {
+        $(".ifempty").show();
+    }
+
+    else if (selection === "liter") {
+        $(".liter1").hide()
+        $(".cubic1").show()
+        $(".ifempty").hide();
+        $(".sameunit").hide();
+        document.getElementById("num7").innerHTML = valNum / 1000;
+    } else if (selection === "cubic") {
+        $(".liter1").show()
+        $(".cubic1").hide()
+        $(".ifempty").hide();
+        $(".sameunit").hide();
+        document.getElementById("num7").innerHTML = valNum * 1000;
+        
+    }
+    else {
+        $(".liter1").hide()
+        $(".cubic1").hide()
+        $(".ifempty").hide();
+        $(".sameunit").show();
+        
+     }
 }
