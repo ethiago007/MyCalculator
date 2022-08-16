@@ -237,7 +237,7 @@
                         <div class="card-body">
                             <h4 class="card-title">Speed</h4>
                             <h5 class="card-text">Convert between meter per second and kilometre per hour.</h5>
-                            <button type="button" class="btn btn-primary">Convert</button>
+                            <button type="button" class="btn btn-primary speedbtn">Convert</button>
                         </div>
                     </div>
                 </td>
@@ -407,7 +407,59 @@
 
     </section>
 
+    <!-- SPEED CONVERSION UNIT  -->
 
+    <section class="speed text-center shadow-lg p-3 mb-5  rounded">
+        <div class="row rowd roww">
+            <div class="col-md-6 col-sm-6 left"> <button type="button" class="btn btn-dark backmass "><b> BACK
+                    </b></button>
+            </div>
+
+
+        </div>
+        <br><br>
+        <div class="ifempty">
+            <h1> CHOOSE A UNIT </h1>
+        </div>
+        <div class="sameunit">
+            <h1> YOU CAN NOT CHOOSE THE SAME UNIT </h1>
+        </div>
+        <table class="speed-form">
+            <tr>
+                <td>
+                    <input type="number" class="num1" name="numbermass" id="numbermass"
+                        oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+                </td>
+                <td>
+                    <select class="form-select selectmass" id="inputGroupSelect01s">
+                        <option value="empty" selected>Choose Unit</option>
+                        <option value="kph">Kilometre(s) per hour</option>
+                        <option value="mps">Metre(s) per seconds</option>
+
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <h5><b>
+                            <div id="num4"></div>
+                        </b></h5>
+                </td>
+                <td>
+                    <span class="kph1">
+                        <h5><b>kp(s)/h</b></h5>
+                    </span>
+                    <span class="mps1">
+                        <h5><b>mp(s)/s
+                    </span></b></h5>
+                </td>
+            </tr>
+        </table>
+
+
+    </section>
 </body>
 
 </html>

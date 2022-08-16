@@ -160,11 +160,13 @@ function massConverter(valNum) {
     else if (selection === "Gram") {
         $(".gram-gram").hide()
         $(".kilo-gram").show()
+        $(".ifempty").hide();
         document.getElementById("num2").innerHTML = valNum / 1000;
     } else {
         document.getElementById("num2").innerHTML = valNum * 1000;
         $(".kilo-gram").hide();
         $(".gram-gram").show();
+        $(".ifempty").hide();
     }
 }
 
@@ -180,12 +182,16 @@ function lengthConverter(valNum) {
         $(".kilo-metre").hide()
         $(".mile-mile").hide()
         $(".centi-meter").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum / 100;
     } else if (selection1 === "centimeter" && selection2 === "kilometre") {
         $(".kilo-metre").show()
         $(".mile-mile").hide()
         $(".centi-meter").hide()
         $(".meter-meter").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum / 100000;
     }
     else if (selection1 === "centimeter" && selection2 === "mile") {
@@ -193,6 +199,8 @@ function lengthConverter(valNum) {
         $(".kilo-metre").hide()
         $(".centi-meter").hide()
         $(".meter-meter").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum / 160900;
     }
     else if (selection1 === "meter" && selection2 === "centimeter") {
@@ -200,12 +208,16 @@ function lengthConverter(valNum) {
         $(".kilo-metre").hide()
         $(".mile-mile").hide()
         $(".meter-meter").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum * 100;
     } else if (selection1 === "meter" && selection2 === "kilometre") {
         $(".centi-meter").hide()
         $(".kilo-metre").show()
         $(".mile-mile").hide()
         $(".meter-meter").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum / 1000;
     } else if (selection1 === "meter" && selection2 === "mile") {
         $(".centi-meter").hide()
@@ -218,30 +230,40 @@ function lengthConverter(valNum) {
         $(".kilo-metre").hide()
         $(".mile-mile").hide()
         $(".meter-meter").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum * 100000;
     } else if (selection1 === "kilometre" && selection2 === "meter") {
         $(".centi-meter").hide()
         $(".kilo-metre").hide()
         $(".mile-mile").hide()
         $(".meter-meter").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum * 1000;
     } else if (selection1 === "kilometre" && selection2 === "mile") {
         $(".centi-meter").hide()
         $(".kilo-metre").hide()
         $(".mile-mile").show()
         $(".meter-meter").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum * 1.609;
     } else if (selection1 === "mile" && selection2 === "centimeter") {
         $(".centi-meter").show()
         $(".kilo-metre").hide()
         $(".mile-mile").hide()
         $(".meter-meter").hide()
+         $(".sameunit").hide();
+          $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum * 160900;
     } else if (selection1 === "mile" && selection2 === "meter") {
         $(".centi-meter").hide()
         $(".kilo-metre").hide()
         $(".mile-mile").hide()
         $(".meter-meter").show()
+         $(".sameunit").hide();
+          $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum * 1609;
     } else if (selection1 === "mile" && selection2 === "kilometre") {
         $(".centi-meter").hide()
@@ -249,7 +271,7 @@ function lengthConverter(valNum) {
         $(".mile-mile").hide()
         $(".meter-meter").hide()
          $(".sameunit").hide();
-         $(".sameunit").show();
+          $(".ifempty").hide();
         document.getElementById("num3").innerHTML = valNum * 1.609;
     }
     else {
@@ -260,5 +282,24 @@ function lengthConverter(valNum) {
         $(".mile-mile").hide()
         $(".meter-meter").hide()
        
+    }
+}
+
+function speedConverter(valNum) {
+    let selection = $("select#inputGroupSelect01s").val()
+    if (selection === "empty") {
+        $(".ifempty").show();
+    }
+
+    else if (selection === "kph") {
+        $(".kph1").hide()
+        $(".mps1").show()
+        $(".ifempty").hide();
+        document.getElementById("num4").innerHTML = (valNum / 3.6).toFixed(5);
+    } else {
+        document.getElementById("num4").innerHTML = (valNum *3.6).toFixed(2);
+        $(".kph1").hide();
+        $(".mps1").show();
+        $(".ifempty").hide();
     }
 }
