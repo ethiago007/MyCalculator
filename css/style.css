@@ -18,15 +18,28 @@ nav {
 
 .right {
   text-align: right;
+  
+}
+/* .right2 {
+  text-align: right;
+  margin-left: 650px;
+} */
+
+.rowd2 {
+  display: none;
+ 
 }
 
-.btn-dark {
-  border-radius: 15px;
-}
-.btn-light {
+
+.btn-dark1 {
   border-radius: 15px;
   float: right;
 }
+.btn-light1 {
+  border-radius: 15px;
+float: right;
+}
+
 
 body {
     display: flex;
@@ -194,8 +207,12 @@ display: none;
   transform: translateY(-7px);
 }
 
+.left1 {
+color: white;
+}
 .converter {
   display: none;
+  margin-left: -108px;
 }
 .conversion {
   width: 900px;
@@ -209,6 +226,64 @@ display: none;
   height: 400px;
 }
 
+.length {
+  display: none;
+  margin-top: 200px;
+ border-radius: 25px;
+ margin-left: 2px;
+}
+.length-form{
+  margin-right: 100px;
+ height: 200px;
+ 
+}
+
+.mass{
+  display: none;
+ margin-top: 200px;
+ border-radius: 25px;
+}
+
+
+
+.mass-form{
+  margin-right: 100px;
+ height: 200px;
+ 
+}
+
+
+.convmenu {
+  margin-left: 12px;
+}
+/* .massnum {
+  
+  position: fixed;
+} */
+.ifempty {
+  display: none;
+}
+.sameunit {
+  display: none;
+}
+.gram-gram {
+  display: none;
+}
+.kilo-gram {
+  display: none;
+}
+.mile-mile {
+  display: none;
+}
+.kilo-metre {
+  display: none;
+}
+.meter-meter {
+  display: none;
+}
+.centi-meter {
+  display: none;
+}
 /* .conversion {
   width: 800px;
 } */
