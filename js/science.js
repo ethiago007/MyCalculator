@@ -303,3 +303,490 @@ function speedConverter(valNum) {
         $(".ifempty").hide();
     }
 }
+
+
+function timeConverter(valNum) {
+    let selection1 = $("select#inputGroupSelect02t").val()
+    let selection2 = $("select#inputGroupSelect022t").val()
+    if (selection1 === "empty" && selection2 === "empty") {
+        $(".ifempty").show();
+    }
+
+    else if (selection1 === "seconds" && selection2 === "minutes") {
+        $(".sec-sec").hide()
+        $(".min-min").show()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 60).toFixed(3);
+    } else if (selection1 === "seconds" && selection2 === "hours") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").show()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 3600).toFixed(3);
+    }
+    else if (selection1 === "seconds" && selection2 === "days") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").show()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 86400).toFixed(2);
+    }
+    else if (selection1 === "seconds" && selection2 === "weeks") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").show()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 604800).toFixed(3);
+    } else if (selection1 === "seconds" && selection2 === "months") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").show()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 2628000).toFixed(3);
+    } else if (selection1 === "seconds" && selection2 === "years") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum / 31540000;
+    } else if (selection1 === "minutes" && selection2 === "seconds") {
+        $(".sec-sec").show()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 60);
+    } else if (selection1 === "minutes" && selection2 === "hours") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").show()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 60).toFixed(2);
+    } else if (selection1 === "minutes" && selection2 === "days") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").show()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 1440).toFixed(3);
+    } else if (selection1 === "minutes" && selection2 === "weeks") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").show()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 10080).toFixed(4);
+    } else if (selection1 === "minutes" && selection2 === "months") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").show()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum /43800).toFixed(4);
+    } else if (selection1 === "minutes" && selection2 === "years") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 525600).toFixed(6);
+    }  else if (selection1 === "hours" && selection2 === "seconds") {
+        $(".sec-sec").show()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 3600);
+    }  else if (selection1 === "hours" && selection2 === "minutes") {
+        $(".sec-sec").hide()
+        $(".min-min").show()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 60);
+    }  else if (selection1 === "hours" && selection2 === "days") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").show()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 24).toFixed(1);
+    }  else if (selection1 === "hours" && selection2 === "weeks") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").show()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 168);
+    }  else if (selection1 === "hours" && selection2 === "months") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").show()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 730).toFixed(2);
+    }  else if (selection1 === "hours" && selection2 === "years") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 8760).toFixed(2);
+    }  else if (selection1 === "days" && selection2 === "seconds") {
+        $(".sec-sec").show()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 86400);
+    }  else if (selection1 === "days" && selection2 === "minutes") {
+        $(".sec-sec").hide()
+        $(".min-min").show()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 1440);
+    }  else if (selection1 === "days" && selection2 === "hours") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").show()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 24);
+    }  else if (selection1 === "days" && selection2 === "weeks") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").show()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 7).toFixed(1);
+    }  else if (selection1 === "days" && selection2 === "months") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").show()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 30.417).toFixed(2);
+    }  else if (selection1 === "days" && selection2 === "years") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum / 365).toFixed(2);
+    }  else if (selection1 === "weeks" && selection2 === "seconds") {
+        $(".sec-sec").show()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 604800);
+    }  else if (selection1 === "weeks" && selection2 === "minutes") {
+        $(".sec-sec").hide()
+        $(".min-min").show()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 10080);
+    }  else if (selection1 === "weeks" && selection2 === "hours") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").show()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 168);
+    }  else if (selection1 === "weeks" && selection2 === "days") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").show()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 7);
+    }  else if (selection1 === "weeks" && selection2 === "months") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").show()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum /4.345).toFixed(1);
+    }  else if (selection1 === "weeks" && selection2 === "years") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = Math.round(valNum /52.143).toFixed(3);
+    }  else if (selection1 === "months" && selection2 === "seconds") {
+        $(".sec-sec").show()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 2628000);
+    }  else if (selection1 === "months" && selection2 === "minutes") {
+        $(".sec-sec").hide()
+        $(".min-min").show()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 43800);
+    }  else if (selection1 === "months" && selection2 === "hours") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").show()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 730);
+    }  else if (selection1 === "months" && selection2 === "days") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").show()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = (valNum * 30.417);
+    }  else if (selection1 === "months" && selection2 === "weeks") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").show()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum * 4.345;
+    }  else if (selection1 === "months" && selection2 === "years") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").show()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum / 12;
+    }  else if (selection1 === "years" && selection2 === "seconds") {
+        $(".sec-sec").show()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum * 31540000;
+    }  else if (selection1 === "years" && selection2 === "minutes") {
+        $(".sec-sec").hide()
+        $(".min-min").show()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum * 525600;
+    }  else if (selection1 === "years" && selection2 === "hours") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").show()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum * 8760;
+    }  else if (selection1 === "years" && selection2 === "day") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").show()
+        $(".wk-wk").hide()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum * 365;
+    }  else if (selection1 === "years" && selection2 === "weeks") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").show()
+        $(".mth-mth").hide()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum * 52.143;
+    }  else if (selection1 === "years" && selection2 === "months") {
+        $(".sec-sec").hide()
+        $(".min-min").hide()
+        $(".hr-hr").hide()
+        $(".day-day").hide()
+        $(".wk-wk").hide()
+        $(".mth-mth").show()
+        $(".yr-yr").hide()
+        $(".sameunit").hide();
+        $(".ifempty").hide();
+        document.getElementById("num5").innerHTML = valNum * 12;
+    }
+    else {
+       $(".sameunit").show();
+       $(".ifempty").hide();
+       $(".sec-sec").hide()
+       $(".min-min").hide()
+       $(".hr-hr").hide()
+       $(".day-day").hide()
+       $(".wk-wk").hide()
+       $(".mth-mth").hide()
+       $(".yr-yr").hide()
+       
+    }
+}

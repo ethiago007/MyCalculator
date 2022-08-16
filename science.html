@@ -38,8 +38,8 @@
 
             <br>
 
-            <div class="output call "> <input type="text" class="input1 noir1" name="display" id="display">
-                <br><br><br><br> <input type="text" class="input noir" name="display2" id="display2" disabled>
+            <div class="output  "> <input type="text" class="input1 " name="display" id="display">
+                <br><br><br><br> <input type="text" class="input " name="display2" id="display2" disabled>
 
             </div>
 
@@ -251,8 +251,8 @@
                         <img src="img/download (1).jpg" class="card-img-top" style="height: 200px;" alt="...">
                         <div class="card-body">
                             <h4 class="card-title">Time</h4>
-                            <h5 class="card-text">Convert between second minute and hour.</h5>
-                            <button type="button" class="btn btn-primary">Convert</button>
+                            <h5 class="card-text">Convert between seconds, minutes, hours, day, weeks, months and even years.</h5>
+                            <button type="button" class="btn btn-primary timebtn">Convert</button>
                         </div>
                     </div>
                 </td>
@@ -460,6 +460,95 @@
 
 
     </section>
+
+    <!-- TIME CONVERSION UNIT -->
+    <section class="time text-center shadow-lg p-3 mb-5  rounded">
+        <div class="row rowd roww">
+            <div class="col-md-6 col-sm-6 left"> <button type="button" class="btn btn-dark backmass "><b> BACK
+                    </b></button>
+            </div>
+
+
+        </div>
+        <br><br>
+        <div class="ifempty">
+            <h1> CHOOSE A UNIT </h1>
+        </div>
+        <div class="sameunit">
+            <h1> YOU CAN NOT CHOOSE THE SAME UNIT </h1>
+        </div>
+        <table class="time-form">
+            <tr>
+                <td>
+                    <input type="number" class="num1" name="numbermass" id="numbermass"
+                        oninput="timeConverter(this.value)" onchange="timeConverter(this.value)">
+                </td>
+                <td>
+                    <select class="form-select selectlenght1" id="inputGroupSelect02t">
+                        <option value="empty" selected>Choose Unit</option>
+                        <option value="seconds">Seconds</option>
+                        <option value="minutes">Minutes</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Day</option>
+                        <option value="weeks">Weeks</option>
+                        <option value="months">Months</option>
+                        <option value="years">Years</option>
+
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <h5><b>
+                            <span id="num5"></span> <span class="sec-sec">
+                                <h5><b>Second(s)</b></h5>
+                            </span>
+                            <span class="min-min">
+                                <h5><b>Minute(s)
+                                    </b></h5>
+                            </span>
+                            <span class="hr-hr">
+                                <h5><b>Hour(s)
+                                    </b></h5>
+                            </span>
+                            <span class="day-day">
+                                <h5><b>Day(s)
+                                    </b></h5>
+                            </span>
+                            <span class="wk-wk">
+                                <h5><b>Week(s)
+                                    </b></h5>
+                            </span>
+                            <span class="mth-mth">
+                                <h5><b>Month(s)
+                                    </b></h5>
+                            </span>
+                            <span class="yr-yr">
+                                <h5><b>Year(s)
+                                    </b></h5>
+                            </span>
+
+                </td>
+                <td>
+                    <select class="form-select selectlenght1" id="inputGroupSelect022t">
+                        <option value="empty" selected>Choose Unit</option>
+                        <option value="seconds">Seconds</option>
+                        <option value="minutes">Minutes</option>
+                        <option value="hours">Hours</option>
+                        <option value="days">Day</option>
+                        <option value="weeks">Weeks</option>
+                        <option value="months">Months</option>
+                        <option value="years">Years</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+    </section>
+
 </body>
 
 </html>

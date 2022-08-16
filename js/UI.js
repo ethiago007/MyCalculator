@@ -94,12 +94,22 @@ $(document).ready(function () {
 
     })
 
+    // TIME BUTTON 
+    $(".timebtn").click(function () {
+        $("section.time").show();
+        $(".scientific-func").hide();
+        $(".NORMAL").hide();
+        $(".converter").hide();
+
+    })
+
     // BACK BUTTON
     $(".backmass").click(function () {
         $(".converter").show();
         $("section.mass").hide();
         $("section.length").hide();
         $("section.speed").hide();
+        $("section.time").hide();
     })
 
 
