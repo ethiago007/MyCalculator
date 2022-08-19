@@ -255,6 +255,14 @@ tr {
   margin-left: -120px;
 }
 
+.exchangesection {
+  display: none;
+  margin-top: 200px;
+  border-radius: 25px;
+  margin-left: -120px;
+}
+
+
 .time {
   display: none;
   margin-top: 200px;
@@ -284,6 +292,11 @@ tr {
 }
 
 .speed-form {
+  margin-right: 100px;
+  height: 200px;
+}
+
+.currency-form {
   margin-right: 100px;
   height: 200px;
 }
@@ -608,3 +621,156 @@ tr {
 ul {
   font-size: medium;
 }
+
+
+
+/* @media only screen and (max-width: 414px) {
+  body {
+   background-color: #f5f5f5;
+ padding: auto;
+
+   }
+   form {
+    width: 390px;
+   }
+   .output {
+    width: 390px;
+   }
+   .output1 {
+    width: 390px;
+   }
+
+   table {
+    width: 380px;
+   }
+   
+tr {
+  width: 390px;
+}
+.input {
+  background-color: black;
+  width: 390px;
+  border-radius: 25px;
+  border: black;
+  font-size: 26px;
+  text-align: right;
+  font-weight: bolder;
+  color: white;
+  text-align: right;
+}
+
+.input1 {
+  background-color: black;
+  width: 39px;
+  border-radius: 25px;
+  border: black;
+  font-size: 26px;
+ font-weight: 900;
+  color: purple;
+  text-align: left;
+}
+.conversion {
+  width: 400px;
+}
+.inputfd {
+  background-color: white;
+  width: 390px;
+  border-radius: 25px;
+  border: white;
+  font-size: 26px;
+  text-align: right;
+  font-weight: bolder;
+  color: black;
+  text-align: right;
+}
+
+.inputfd1 {
+  background-color: white;
+  width: 390px;
+  border-radius: 25px;
+  border: white;
+  font-size: 26px;
+  font-weight: bolder;
+  color: purple;
+  text-align: left;
+}
+.row1 {
+  letter-spacing: 0px;
+  width: 390px;
+}
+
+}
+@media only screen and (max-height: 736px) {
+  body {
+   background-color: #f5f5f5;
+  padding: auto;
+   
+  }
+  form {
+    width: 400px;
+   }
+   .output {
+    width: 390px;
+   }
+   .output1 {
+    width: 390px;
+   }
+   table {
+    width: 380px;
+   }
+   
+tr {
+  width: 390px;
+}
+.input {
+  background-color: black;
+  width: 390px;
+  border-radius: 25px;
+  border: black;
+  font-size: 26px;
+  text-align: right;
+  font-weight: bolder;
+  color: white;
+  text-align: right;
+}
+
+.input1 {
+  background-color: black;
+  width: 390px;
+  border-radius: 25px;
+  border: black;
+  font-size: 26px;
+ font-weight: 900;
+  color: purple;
+  text-align: left;
+}
+.conversion {
+  width: 400px;
+}
+.inputfd {
+  background-color: white;
+  width: 390px;
+  border-radius: 25px;
+  border: white;
+  font-size: 26px;
+  text-align: right;
+  font-weight: bolder;
+  color: black;
+  text-align: right;
+}
+
+.inputfd1 {
+  background-color: white;
+  width: 390px;
+  border-radius: 25px;
+  border: white;
+  font-size: 26px;
+  font-weight: bolder;
+  color: purple;
+  text-align: left;
+}
+.row1 {
+  letter-spacing: 0px;
+  width: 390px;
+}
+} */

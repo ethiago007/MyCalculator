@@ -1,4 +1,26 @@
+// $(document).ready(function() {
+   
+//     let currency1 = $("select#currencyselection1").val();
+//     let currency2 = $("select#currencyselection2").val();
+//     let amount = $("div#currency7").val();
+//     ExchangeService.getAmount(currency1,currency2,amount)
+//     .then(function(response) {
+//       getElements(response);
+     
+//         });
+//     });
 let selection = "rad"
+
+
+// function getAmount(response) {
+//     if (response) {
+//         $('#currency7').text(` ${response.conversion_result}`);
+  
+//     } else {
+//       $('.showErrors').text(`There was an error: ${response.message}`);
+//     }
+//   }
+  
 
 function back() {
     var value = document.getElementById("display").value;

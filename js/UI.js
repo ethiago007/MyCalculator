@@ -1,11 +1,17 @@
-$(document).ready(function () {
 
+
+
+$(document).ready(function () {
+   
     $(".normcalc").click(function () {
         $(".scientific-func").hide()
         $(".scicalc").removeClass("let1")
         $(".normcalc").addClass("let1")
         $(".converter").hide();
         $(".NORMAL").show();
+        $(".exchangesection").hide();
+        $(".unit").removeClass("let1")
+        $(".EXCHANGE").removeClass("let1")
     });
 
     $(".scicalc").click(function () {
@@ -15,14 +21,31 @@ $(document).ready(function () {
         $(".normcalc").addClass("let")
         $(".converter").hide();
         $(".NORMAL").show();
+        $(".exchangesection").hide();
+        $(".unit").removeClass("let1")
+        $(".EXCHANGE").removeClass("let1")
     });
 
     $(".unit").click(function () {
         $(".scientific-func").hide();
         $(".NORMAL").hide();
         $(".converter").show();
+        $(".exchangesection").hide();
         $(".scicalc").removeClass("let1")
         $(".normcalc").removeClass("let1")
+        $(".EXCHANGE").removeClass("let1")
+        $(".unit").addClass("let1")
+    })
+
+    $(".EXCHANGE").click(function() {
+        $(".scientific-func").hide();
+        $(".NORMAL").hide();
+        $(".converter").hide();
+        $(".exchangesection").show();
+        $(".EXCHANGE").addClass("let1")
+        $(".scicalc").removeClass("let1")
+        $(".normcalc").removeClass("let1")
+        $(".unit").removeClass("let1")
     })
 
     // CODE FOR DARK
