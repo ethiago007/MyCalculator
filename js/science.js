@@ -923,4 +923,4 @@ function tempConverter(valNum) {
         $(".sameunit").show();
         
      }
-}
+} 

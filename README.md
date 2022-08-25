@@ -211,7 +211,11 @@ Its an application that allows users to perform simple arithmetic and scientific
 
 ## CODE SOLUTION
 
-https://github.com/ethiago007/THE_PORTAL.git
+https://github.com/ethiago007/MyCalculator.git
+
+
+## HOW THE PAGE LOOKS
+![alt The Calculator](./img/Screenshot%202022-08-14%2015.31.56.png)
 
 
 ## LIVE DISPLAY

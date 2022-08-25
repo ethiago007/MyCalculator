@@ -49,7 +49,8 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f5f5;
-  margin-left: 460px;
+  margin-right: -460px;
+width: 1300px;
 }
 
 div {
@@ -120,7 +121,7 @@ tr {
   border-radius: 25px;
   border: black;
   font-size: 26px;
- font-weight: 900;
+  font-weight: 900;
   color: purple;
   text-align: left;
 }
@@ -233,6 +234,7 @@ tr {
 
 .card {
   height: 400px;
+  width: 18rem;
 }
 
 .length {
@@ -622,155 +624,1246 @@ ul {
   font-size: medium;
 }
 
+/* iPHONE X PORTRAIT */
+@media (min-device-width: 375px) and (max-device-width: 380px) {
 
-
-/* @media only screen and (max-width: 414px) {
-  body {
-   background-color: #f5f5f5;
- padding: auto;
-
-   }
-   form {
-    width: 390px;
-   }
-   .output {
-    width: 390px;
-   }
-   .output1 {
-    width: 390px;
-   }
-
-   table {
-    width: 380px;
-   }
-   
-tr {
-  width: 390px;
-}
-.input {
-  background-color: black;
-  width: 390px;
-  border-radius: 25px;
-  border: black;
-  font-size: 26px;
-  text-align: right;
-  font-weight: bolder;
-  color: white;
-  text-align: right;
-}
-
-.input1 {
-  background-color: black;
-  width: 39px;
-  border-radius: 25px;
-  border: black;
-  font-size: 26px;
- font-weight: 900;
-  color: purple;
-  text-align: left;
-}
-.conversion {
-  width: 400px;
-}
-.inputfd {
-  background-color: white;
-  width: 390px;
-  border-radius: 25px;
-  border: white;
-  font-size: 26px;
-  text-align: right;
-  font-weight: bolder;
-  color: black;
-  text-align: right;
-}
-
-.inputfd1 {
-  background-color: white;
-  width: 390px;
-  border-radius: 25px;
-  border: white;
-  font-size: 26px;
-  font-weight: bolder;
-  color: purple;
-  text-align: left;
-}
-.row1 {
-  letter-spacing: 0px;
-  width: 390px;
-}
-
-}
-@media only screen and (max-height: 736px) {
-  body {
-   background-color: #f5f5f5;
-  padding: auto;
-   
+  /* body {
+    margin-right: 500px;
+} */
+  .card {
+    width: 10rem;
   }
+
+  body {
+    width: 375px;
+    margin-left: none;
+  }
+
+  .output {
+    width: 350px;
+  }
+
+  .output1 {
+    width: 350px;
+  }
+
+  .inputfd {
+    width: 350px;
+  }
+
+  .inputfd1 {
+    width: 350px;
+  }
+
+  .input1 {
+    width: 350px;
+  }
+
+  .input {
+    width: 350px;
+  }
+
+  .row1 {
+    width: 350px;
+  }
+
+  table {
+    width: 355px;
+  }
+
+  .conversion {
+    width: 350px;
+
+  }
+
+  .mass {
+    width: 375px;
+  }
+
+  .length {
+    width: 375px;
+  }
+
+  .speed {
+    width: 375px;
+  }
+
+  .time {
+    width: 375px;
+  }
+
+  .temp {
+
+    width: 375px;
+  }
+
+  .volume {
+
+    width: 375px;
+  }
+
+  .exchangesection {
+    width: 375px;
+    margin-left: 2px;
+    margin-right: none;
+  }
+
+  .converter {
+    margin-left: 2px;
+    margin-right: none;
+  }
+
+  .convmenu {
+    margin-left: none;
+    margin-right: none;
+  }
+}
+
+/* iPHONE X LANDSCAPE */
+@media (min-device-width:812px) and (max-device-width:820px) {
+
+  /* body {
+    margin-right: 500px;
+} */
+  .card {
+    width: 10rem;
+  }
+
+
+  .output {
+    width: 780px;
+  }
+
+  .output1 {
+    width: 780px;
+  }
+
+  .inputfd {
+    width: 750px;
+  }
+
+  .inputfd1 {
+    width: 750px;
+  }
+
+  .input1 {
+    width: 750px;
+  }
+
+  .input {
+    width: 750px;
+  }
+
+  .row1 {
+    width: 750px;
+  }
+
+  table {
+    width: 700px;
+  }
+
+  .mass {
+    width: 800px;
+  }
+
+  .length {
+    width: 800px;
+  }
+
+  .speed {
+    width: 800px;
+  }
+
+  .time {
+    width: 800px;
+  }
+
+  .temp {
+
+    width: 800px;
+  }
+
+  .volume {
+
+    width: 800px;
+  }
+
+  .exchangesection {
+    width: 800px;
+
+  }
+
+  .converter {
+    margin-left: 1px;
+    margin-right: none;
+  }
+
+
+}
+
+/* iPAD */
+@media (min-device-width:768px) and (max-device-width:778px) {
+  body {
+    width: 768px;
+  }
+
+  form {
+    width: 768px;
+  }
+
+  .card {
+    width: 12rem;
+  }
+
+  .output {
+    width: 700px;
+  }
+
+  .output1 {
+    width: 700px;
+  }
+
+  .inputfd {
+    width: 700px;
+  }
+
+  .inputfd1 {
+    width: 700px;
+  }
+
+  .input1 {
+    width: 700px;
+  }
+
+  .input {
+    width: 700px;
+  }
+
+  .row1 {
+    width: 700px;
+  }
+
+  table {
+    width: 700px;
+  }
+
+  .mass {
+    width: 700px;
+  }
+
+  .mass-form {
+    width: 600px;
+    margin-right: 100px;
+  }
+
+  .length {
+    width: 700px;
+  }
+
+  .length-form {
+    width: 600px;
+    margin-right: 100px;
+  }
+
+  .speed {
+    width: 700px;
+  }
+
+  .speed-form {
+    width: 600px;
+    margin-right: 100px;
+  }
+
+  .time {
+    width: 700px;
+  }
+
+  .time-form {
+    width: 600px;
+    margin-right: 100px;
+  }
+
+  .temp {
+
+    width: 700px;
+  }
+
+  .temp-form {
+    width: 600px;
+    margin-right: 100px;
+  }
+
+  .volume {
+
+    width: 700px;
+  }
+
+  .volume-form {
+    width: 600px;
+    margin-right: 100px;
+  }
+
+  .exchangesection {
+    width: 700px;
+  }
+
+  .currency-form {
+    width: 600px;
+    margin-right: 100px;
+  }
+
+  .converter {
+    margin-left: 1px;
+    margin-right: none;
+  }
+
+  .card {
+    width: 15rem;
+  }
+
+
+}
+
+/* iPAD MINI AND iPAD PRO */
+@media (min-device-width:1024px) and (max-device-width:1056px) {
+  body {
+    width: 1024px;
+  }
+
+  form {
+    width: 1024px;
+  }
+
+
+  .output {
+    width: 1000px;
+  }
+
+  .output1 {
+    width: 1000px;
+  }
+
+  .inputfd {
+    width: 1000px;
+  }
+
+  .inputfd1 {
+    width: 1000px;
+  }
+
+  .input1 {
+    width: 1000px;
+  }
+
+  .input {
+    width: 1000px;
+  }
+
+  .row1 {
+    width: 1000px;
+  }
+
+  table {
+    width: 1000px;
+  }
+
+  .mass {
+    width: 1000px;
+  }
+
+  .mass-form {
+    width: 1000px;
+    margin-right: 100px;
+  }
+
+  .length {
+    width: 1000px;
+  }
+
+  .length-form {
+    width: 1000px;
+    margin-right: 100px;
+  }
+
+  .speed {
+    width: 1000px;
+  }
+
+  .speed-form {
+    width: 1000px;
+    margin-right: 100px;
+  }
+
+  .time {
+    width: 1000px;
+  }
+
+  .time-form {
+    width: 1000px;
+    margin-right: 100px;
+  }
+
+  .temp {
+
+    width: 1000px;
+  }
+
+  .temp-form {
+    width: 1000px;
+    margin-right: 100px;
+  }
+
+  .volume {
+
+    width: 1000px;
+  }
+
+  .volume-form {
+    width: 1000px;
+    margin-right: 100px;
+  }
+
+  .exchangesection {
+    width: 1000px;
+
+    margin-right: -5px;
+  }
+
+  .currency-form {
+    width: 900px;
+    margin-right: 100px;
+  }
+
+  .converter {
+    margin-right: 100px;
+  }
+
+  .convmenu {
+    width: 1000px;
+    margin-left: -90px;
+  }
+
+  .card {
+    width: 15rem;
+  }
+
+  .conversion {
+    width: 1000px;
+  }
+
+
+}
+
+/*  iPHONE 6,7,8 LANDSCAPE MODE */
+@media (min-device-width: 667px) and (max-device-width: 677px) {
+  body {
+    width: 667px;
+
+  }
+
+  form {
+    width: 667px;
+  }
+
+
+  .output {
+    width: 630px;
+  }
+
+  .output1 {
+    width: 630px;
+  }
+
+  .inputfd {
+    width: 630px;
+  }
+
+  .inputfd1 {
+    width: 630px;
+  }
+
+  .input1 {
+    width: 630px;
+  }
+
+  .input {
+    width: 630px;
+  }
+
+  .row1 {
+    width: 650px;
+  }
+
+  table {
+    width: 630px;
+  }
+
+  .mass {
+    width: 650px;
+  }
+
+  .mass-form {
+    width: 630px;
+    margin-right: 100px;
+  }
+
+  .length {
+    width: 650px;
+  }
+
+  .length-form {
+    width: 630px;
+    margin-right: 100px;
+  }
+
+  .speed {
+    width: 650px;
+  }
+
+  .speed-form {
+    width: 630px;
+    margin-right: 100px;
+  }
+
+  .time {
+    width: 650px;
+  }
+
+  .time-form {
+    width: 630px;
+    margin-right: 100px;
+  }
+
+  .temp {
+
+    width: 650px;
+  }
+
+  .temp-form {
+    width: 630px;
+    margin-right: 100px;
+  }
+
+  .volume {
+
+    width: 650px;
+  }
+
+  .volume-form {
+    width: 630px;
+    margin-right: 100px;
+  }
+
+  .exchangesection {
+    width: 650px;
+    margin-left: 10px;
+  }
+
+  .currency-form {
+    width: 630px;
+    margin-right: 100px;
+  }
+
+  .converter {
+    margin-right: 100px;
+  }
+
+  .convmenu {
+    width: 1000px;
+    margin-left: -90px;
+  }
+
+  .card {
+    width: 15rem;
+  }
+
+  .conversion {
+    width: 365px;
+  }
+
+
+}
+
+/* iPHONE 6+,7+,8+ PORTRAIT MODE */
+@media (min-device-width: 414px) and (max-device-width: 430px) {
+  body {
+    width: 414px;
+    margin-left: none;
+  }
+
+  form {
+    width: 414px;
+  }
+
+
+  .output {
+    width: 380px;
+  }
+
+  .output1 {
+    width: 380px;
+  }
+
+  .inputfd {
+    width: 380px;
+  }
+
+  .inputfd1 {
+    width: 380px;
+  }
+
+  .input1 {
+    width: 380px;
+  }
+
+  .input {
+    width: 380px;
+  }
+
+  .row1 {
+    width: 400px;
+  }
+
+  table {
+    width: 400px;
+  }
+
+  .converter {
+    display: none;
+    margin-left: 1px;
+    width: 412px;
+  }
+
+  .mass {
+    width: 400px;
+  }
+
+  .mass-form {
+    width: 350px;
+    margin-right: 100px;
+  }
+
+  .length {
+    width: 400px;
+  }
+
+  .length-form {
+    width: 350px;
+    margin-right: 100px;
+  }
+
+  .speed {
+    width: 400px;
+  }
+
+  .speed-form {
+    width: 350px;
+    margin-right: 100px;
+  }
+
+  .time {
+    width: 400px;
+  }
+
+  .time-form {
+    width: 350px;
+    margin-right: 100px;
+  }
+
+  .temp {
+
+    width: 400px;
+  }
+
+  .temp-form {
+    width: 350px;
+    margin-right: 100px;
+  }
+
+  .volume {
+
+    width: 400px;
+  }
+
+  .volume-form {
+    width: 350px;
+    margin-right: 100px;
+  }
+
+  .exchangesection {
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 150px;
+  }
+
+  .currency-form {
+    width: 350px;
+    margin-right: 100px;
+  }
+
+  .converter {
+    margin-right: 100px;
+  }
+
+  .convmenu {
+    width: 1000px;
+    margin-left: -90px;
+  }
+
+  .card {
+    width: 15rem;
+  }
+
+  .conversion {
+    width: 365px;
+  }
+
+
+}
+
+/* iPHONE 6+,7+,8+ LANDSCAPE MODE */
+@media (min-device-width: 736px) and (max-device-width: 746px) {
+  body {
+
+    margin-left: none;
+    width: 736px;
+  }
+
+  form {
+    width: 736px;
+  }
+
+
+  .output {
+    width: 700px;
+  }
+
+  .output1 {
+    width: 700px;
+  }
+
+  .inputfd {
+    width: 700px;
+  }
+
+  .inputfd1 {
+    width: 700px;
+  }
+
+  .input1 {
+    width: 700px;
+  }
+
+  .input {
+    width: 700px;
+  }
+
+  .row1 {
+    width: 720px;
+  }
+
+  table {
+    width: 720px;
+  }
+
+  .converter {
+    display: none;
+    margin-left: 1px;
+    width: 720px;
+  }
+
+  .mass {
+    width: 720px;
+  }
+
+  .mass-form {
+    width: 690px;
+    margin-right: 100px;
+  }
+
+  .length {
+    width: 720px;
+  }
+
+  .length-form {
+    width: 690px;
+    margin-right: 100px;
+  }
+
+  .speed {
+    width: 720px;
+  }
+
+  .speed-form {
+    width: 690px;
+    margin-right: 100px;
+  }
+
+  .time {
+    width: 720px;
+  }
+
+  .time-form {
+    width: 690px;
+    margin-right: 100px;
+  }
+
+  .temp {
+
+    width: 720px;
+  }
+
+  .temp-form {
+    width: 690px;
+    margin-right: 100px;
+  }
+
+  .volume {
+
+    width: 720px;
+  }
+
+  .volume-form {
+    width: 690px;
+    margin-right: 100px;
+  }
+
+  .exchangesection {
+    width: 720px;
+
+    margin-bottom: 150px;
+  }
+
+  .currency-form {
+    width: 690px;
+    margin-right: 100px;
+  }
+
+  /* .converter {
+    margin-right: 100px;
+  } */
+  .convmenu {
+    width: 1000px;
+    margin-left: -90px;
+  }
+
+  .card {
+    width: 15rem;
+  }
+
+  .conversion {
+    width: 365px;
+  }
+
+
+}
+
+
+/* SAMSUNG */
+@media (min-device-width: 412px) and (max-device-width: 422px) {
+  body {
+    width: 412px;
+    margin-left: none;
+  }
+
   form {
     width: 400px;
-   }
-   .output {
-    width: 390px;
-   }
-   .output1 {
-    width: 390px;
-   }
-   table {
+  }
+
+
+  .output {
     width: 380px;
-   }
-   
-tr {
-  width: 390px;
-}
-.input {
-  background-color: black;
-  width: 390px;
-  border-radius: 25px;
-  border: black;
-  font-size: 26px;
-  text-align: right;
-  font-weight: bolder;
-  color: white;
-  text-align: right;
+  }
+
+  .output1 {
+    width: 380px;
+  }
+
+  .inputfd {
+    width: 380px;
+  }
+
+  .inputfd1 {
+    width: 380px;
+  }
+
+  .input1 {
+    width: 380px;
+  }
+
+  .input {
+    width: 380px;
+  }
+
+  .row1 {
+    width: 400px;
+  }
+
+  table {
+    width: 370px;
+  }
+
+  .card {
+    width: 8rem;
+  }
+
+  .converter {
+    display: none;
+    margin-left: 1px;
+    width: 400px;
+  }
+
+  .mass {
+    width: 400px;
+  }
+
+  .mass-form {
+    width: 380px;
+    margin-right: 100px;
+  }
+
+  .length {
+    width: 400px;
+  }
+
+  .length-form {
+    width: 380px;
+    margin-right: 100px;
+  }
+
+  .speed {
+    width: 400px;
+  }
+
+  .speed-form {
+    width: 380px;
+    margin-right: 100px;
+  }
+
+  .time {
+    width: 400px;
+  }
+
+  .time-form {
+    width: 380px;
+    margin-right: 100px;
+  }
+
+  .temp {
+
+    width: 400px;
+  }
+
+  .temp-form {
+    width: 380px;
+    margin-right: 100px;
+  }
+
+  .volume {
+
+    width: 400px;
+  }
+
+  .volume-form {
+    width: 380px;
+    margin-right: 100px;
+  }
+
+  .exchangesection {
+    width: 400px;
+
+    margin-bottom: 150px;
+  }
+
+  .currency-form {
+    width: 380px;
+    margin-right: 100px;
+  }
+
+  /* .converter {
+      margin-right: 100px;
+    } */
+  .convmenu {
+    width: 300px;
+
+  }
+
+  .conversion {
+    width: 300px;
+  }
+
+
 }
 
-.input1 {
-  background-color: black;
-  width: 390px;
-  border-radius: 25px;
-  border: black;
-  font-size: 26px;
- font-weight: 900;
-  color: purple;
-  text-align: left;
-}
-.conversion {
-  width: 400px;
-}
-.inputfd {
-  background-color: white;
-  width: 390px;
-  border-radius: 25px;
-  border: white;
-  font-size: 26px;
-  text-align: right;
-  font-weight: bolder;
-  color: black;
-  text-align: right;
+
+/* SAMSUNG LANDSCAPE */
+@media (min-device-width: 914px) and (max-device-width: 924px) {
+  body {
+    width: 914px;
+
+  }
+
+  form {
+    width: 914px;
+  }
+
+
+  .output {
+    width: 890px;
+  }
+
+  .output1 {
+    width: 890px;
+  }
+
+  .inputfd {
+    width: 890px;
+  }
+
+  .inputfd1 {
+    width: 890px;
+  }
+
+  .input1 {
+    width: 890px;
+  }
+
+  .input {
+    width: 890px;
+  }
+
+  .row1 {
+    width: 900px;
+  }
+
+  table {
+    width: 900px;
+  }
+
+  .converter {
+    display: none;
+    margin-left: 1px;
+    width: 890px;
+  }
+
+  .mass {
+    width: 890px;
+  }
+
+  .mass-form {
+    width: 870px;
+    margin-right: 100px;
+  }
+
+  .length {
+    width: 890px;
+  }
+
+  .length-form {
+    width: 870px;
+    margin-right: 100px;
+  }
+
+  .speed {
+    width: 890px;
+  }
+
+  .speed-form {
+    width: 870px;
+    margin-right: 100px;
+  }
+
+  .time {
+    width: 890px;
+  }
+
+  .time-form {
+    width: 870px;
+    margin-right: 100px;
+  }
+
+  .temp {
+
+    width: 890px;
+  }
+
+  .temp-form {
+    width: 870px;
+    margin-right: 100px;
+  }
+
+  .volume {
+
+    width: 890px;
+  }
+
+  .volume-form {
+    width: 870px;
+    margin-right: 100px;
+  }
+
+  .exchangesection {
+    width: 890px;
+
+    margin-bottom: 150px;
+  }
+
+  .currency-form {
+    width: 870px;
+    margin-right: 100px;
+  }
+
+  /* .converter {
+      margin-right: 100px;
+    } */
+  .convmenu {
+    width: 900px;
+
+  }
+
+  .conversion {
+    width: 900px;
+  }
+
+
 }
 
-.inputfd1 {
-  background-color: white;
-  width: 390px;
-  border-radius: 25px;
-  border: white;
-  font-size: 26px;
-  font-weight: bolder;
-  color: purple;
-  text-align: left;
+/* WIDE SCREEN TABLET LIKE iPAD PRO */
+@media (min-device-width: 1366px) and (max-device-width: 1386px) {
+  body {
+    width: 1366px;
+    margin-right: 100px;
+  }
+
+  form {
+    width: 1366px;
+  }
+
+
+  .output {
+    width: 1300px;
+  }
+
+  .output1 {
+    width: 1300px;
+  }
+
+  .inputfd {
+    width: 1300px;
+  }
+
+  .inputfd1 {
+    width: 1300px;
+  }
+
+  .input1 {
+    width: 1300px;
+  }
+
+  .input {
+    width: 1300px;
+  }
+
+  .row1 {
+    width: 1300px;
+  }
+
+  table {
+    width: 1300px;
+  }
+
+  .converter {
+    display: none;
+    /* margin-left: 1px; */
+    width: 1300px;
+  }
+
+  .mass {
+    width: 1300px;
+  }
+
+  .mass-form {
+    width: 1100px;
+    margin-right: 100px;
+  }
+
+  .length {
+    width: 1300px;
+  }
+
+  .length-form {
+    width: 1100px;
+    margin-right: 100px;
+  }
+
+  .speed {
+    width: 1300px;
+  }
+
+  .speed-form {
+    width: 1100px;
+    margin-right: 100px;
+  }
+
+  .time {
+    width: 1300px;
+  }
+
+  .time-form {
+    width: 1100px;
+    margin-right: 100px;
+  }
+
+  .temp {
+
+    width: 1300px;
+  }
+
+  .temp-form {
+    width: 1100px;
+    margin-right: 100px;
+  }
+
+  .volume {
+    width: 1300px;
+  }
+
+  .volume-form {
+    width: 1100px;
+    margin-right: 100px;
+  }
+
+  .exchangesection {
+    width: 1300px;
+
+    margin-bottom: 150px;
+  }
+
+  .currency-form {
+    width: 1150px;
+    margin-right: 300px;
+  }
+
+  /* .converter {
+      margin-right: 100px;
+    } */
+  .convmenu {
+    width: 1300px;
+
+
+  }
+
+  .conversion {
+    width: 1300px;
+   margin-left: 80px;
+  }
+
+
 }
-.row1 {
-  letter-spacing: 0px;
-  width: 390px;
+
+@media only screen and (min-device-width: 1400px) {
+  body {
+    margin-left: 460px;
+    width: 1500px;
+  }
 }
-} */
