@@ -219,7 +219,7 @@ https://github.com/ethiago007/MyCalculator.git
 
 
 ## LIVE DISPLAY
-https://6307ecbd1d7c7000b460736f--gregarious-elf-734088.netlify.app/
+https://kamalcodescalculator.netlify.app/
 
 
 
